@@ -1,0 +1,30 @@
+'Gerdemann.ImageHotspots:Content.ImageHotspot':
+  superTypes:
+    'Neos.Neos:Content': true
+  constraints:
+    nodeTypes:
+      'Gerdemann.ImageHotspots:Content.Hotspot': true
+      '*': false
+  ui:
+    icon: image
+    label: i18n
+    inspector:
+      tabs:
+        general:
+          label: i18n
+          position: 0
+          icon: 'icon-pencil'
+      groups:
+        image:
+          label: i18n
+          tab: 'general'
+          icon: 'icon-picture'
+          position: 10
+  properties:
+    image:
+      type: 'Neos\Media\Domain\Model\ImageInterface'
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: 'image'

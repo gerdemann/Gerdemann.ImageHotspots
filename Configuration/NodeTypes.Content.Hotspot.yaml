@@ -1,0 +1,63 @@
+'Gerdemann.ImageHotspots:Content.Hotspot':
+  superTypes:
+    'Neos.Neos:Content': true
+  constraints:
+    nodeTypes:
+      '*': false
+  ui:
+    icon: image
+    label: i18n
+    inlineEditable: true
+    inspector:
+      tabs:
+        general:
+          label: i18n
+          position: 0
+          icon: 'icon-pencil'
+      groups:
+        position:
+          label: i18n
+          tab: 'general'
+          icon: 'icon-crosshairs'
+          position: 10
+        icon:
+          label: i18n
+          tab: 'general'
+          icon: 'icon-camera'
+          position: 10
+  properties:
+    top:
+      type: string
+      defaultValue: 50
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: 'position'
+          editor: 'Shel.Neos.RangeEditor/RangeEditor'
+          editorOptions:
+            min: 0
+            max: 100
+            step: 1
+            unit: '%'
+    left:
+      type: string
+      defaultValue: 50
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: 'position'
+          editor: 'Shel.Neos.RangeEditor/RangeEditor'
+          editorOptions:
+            min: 0
+            max: 100
+            step: 1
+            unit: '%'
+    icon:
+      type: 'Neos\Media\Domain\Model\ImageInterface'
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: 'icon'

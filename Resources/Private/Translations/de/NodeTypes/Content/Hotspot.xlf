@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file original="" product-name="Gerdemann.ImageHotspots" source-language="en" datatype="plaintext" target-language="de">
+        <body>
+            <trans-unit id="ui.label" xml:space="preserve" approved="yes">
+                <source>Hotspot</source>
+                <target xml:lang="de">Hotspot</target>
+            </trans-unit>
+            <trans-unit id="tabs.general" xml:space="preserve" approved="yes">
+                <source>General</source>
+                <target xml:lang="de">Allgemein</target>
+            </trans-unit>
+            <trans-unit id="groups.position" xml:space="preserve" approved="yes">
+                <source>Position</source>
+                <target xml:lang="de">Position</target>
+            </trans-unit>
+            <trans-unit id="groups.icon" xml:space="preserve" approved="yes">
+                <source>Icon</source>
+                <target xml:lang="de">Icon</target>
+            </trans-unit>
+            <trans-unit id="properties.top" xml:space="preserve" approved="yes">
+                <source>From top</source>
+                <target xml:lang="de">Von oben</target>
+            </trans-unit>
+            <trans-unit id="properties.left" xml:space="preserve" approved="yes">
+                <source>From left</source>
+                <target xml:lang="de">Von links</target>
+            </trans-unit>
+            <trans-unit id="properties.icon" xml:space="preserve" approved="yes">
+                <source>Icon</source>
+                <target xml:lang="de">Icon</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

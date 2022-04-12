@@ -1,0 +1,32 @@
+prototype(Neos.Neos:Page) {
+    hotspotStyles = Neos.Fusion:Tag {
+        @position = 'before closingHeadTag'
+        tagName = 'link'
+        attributes.rel = 'stylesheet'
+        attributes.href = Neos.Fusion:ResourceUri {
+            path = 'Styles/ImageHotspot.css'
+            package = 'Gerdemann.ImageHotspots'
+        }
+    }
+
+    hotspotJavaScript = Neos.Fusion:Tag {
+        @position = 'before closingBodyTag'
+        tagName = 'script'
+        attributes.type = 'text/javascript'
+        attributes.src = Neos.Fusion:ResourceUri {
+            path = 'JavaScripts/ImageHotspot.js'
+            package = 'Gerdemann.ImageHotspots'
+        }
+    }
+    hotspotBackendJavaScript = Neos.Fusion:Tag {
+        @if.inBackend = ${node.context.inBackend}
+        @position = 'before closingBodyTag'
+        tagName = 'script'
+        attributes.type = 'text/javascript'
+        attributes.src = Neos.Fusion:ResourceUri {
+            path = 'JavaScripts/ImageHotspotBackend.js'
+            package = 'Gerdemann.ImageHotspots'
+        }
+    }
+}
+

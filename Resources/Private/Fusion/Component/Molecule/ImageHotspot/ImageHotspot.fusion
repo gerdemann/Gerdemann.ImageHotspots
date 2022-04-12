@@ -1,0 +1,12 @@
+prototype(Gerdemann.ImageHotspots:Component.Molecule.ImageHotspot) < prototype(Neos.Neos:ContentComponent) {
+    hotspots = ''
+    image = ''
+
+    renderer = afx`
+    <div class="imagehotspot-container">
+        <img class="imagehotspot-image" src={props.image} />
+
+        {props.hotspots}
+    </div>
+    `
+}

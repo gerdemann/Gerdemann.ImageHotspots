@@ -1,0 +1,17 @@
+prototype(Gerdemann.ImageHotspots:Component.Atom.Hotspot) < prototype(Neos.Fusion:Component) {
+    top = 50
+    left = 50
+    iconUri = ''
+
+    renderer = afx`
+        <div style={'top: ' + props.top + '%; left: ' + props.left + '%;'} class="imagehotspot-hotspot imagehotspot-hotspot--top-left">
+            <div class="imagehotspot-hotspot__button">
+                <img src={props.iconUri} alt="Hotspot" />
+            </div>
+            <div class="imagehotspot-hotspot__label">
+                <h4>This is the title</h4>
+                <p>This is some text that goes in the label. It describes the item.</p>
+            </div>
+        </div>
+    `
+}

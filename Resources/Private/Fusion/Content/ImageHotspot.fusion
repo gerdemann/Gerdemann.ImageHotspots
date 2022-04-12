@@ -1,0 +1,10 @@
+prototype(Gerdemann.ImageHotspots:Content.ImageHotspot) < prototype(Neos.Neos:ContentComponent) {
+    renderer = Gerdemann.ImageHotspots:Component.Molecule.ImageHotspot {
+        hotspots = Neos.Neos:ContentCollectionRenderer {
+            items = ${q(node).children()}
+        }
+        image = Neos.Neos:ImageUri {
+            asset = ${q(node).property('image')}
+        }
+    }
+}

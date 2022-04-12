@@ -1,0 +1,10 @@
+Neos:
+  Neos:
+    fusion:
+      autoInclude:
+        'Gerdemann.ImageHotspots': true
+    userInterface:
+      translation:
+        autoInclude:
+          'Gerdemann.ImageHotspots':
+            - 'NodeTypes/*'

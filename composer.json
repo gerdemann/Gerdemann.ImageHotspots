@@ -1,0 +1,26 @@
+{
+    "description": "Neos CMS Package for image hotspots",
+    "type": "neos-plugin",
+    "name": "gerdemann/imagehotspots",
+    "license": "MIT",
+    "keywords": [
+        "flow",
+        "neoscms"
+    ],
+    "require": {
+        "neos/neos": "^7.0",
+        "shel/neos-rangeeditor": "~1.1.1",
+        "mhsdesign/liveinspectorjsevents": "~2.0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gerdemann\\ImageHotspots\\": "Classes"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Gerdemann.ImageHotspots"
+        }
+    }
+}
+

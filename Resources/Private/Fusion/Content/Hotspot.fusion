@@ -1,0 +1,23 @@
+prototype(Gerdemann.ImageHotspots:Content.Hotspot) < prototype(Neos.Neos:ContentComponent) {
+    renderer = Gerdemann.ImageHotspots:Component.Atom.Hotspot {
+        top = ${q(node).property('top')}
+        left = ${q(node).property('left')}
+
+        iconUri = Neos.Fusion:Case {
+            hasIcon {
+                condition = ${q(node).property('icon')}
+                renderer = Neos.Neos:ImageUri {
+                    asset = ${q(node).property('icon')}
+                    maximumHeight = 45
+                    maximumWidth = 45
+                }
+            }
+
+            fallback {
+                @position = 'end'
+                condition = true
+                renderer = Gerdemann.ImageHotspots:Utility.IconFallback
+            }
+        }
+    }
+}

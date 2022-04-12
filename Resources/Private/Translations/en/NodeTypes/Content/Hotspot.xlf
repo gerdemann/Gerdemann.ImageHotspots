@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file original="" product-name="Gerdemann.ImageHotspots" source-language="en" datatype="plaintext">
+        <body>
+            <trans-unit id="ui.label" xml:space="preserve" approved="yes">
+                <source>Hotspot</source>
+            </trans-unit>
+            <trans-unit id="tabs.general" xml:space="preserve" approved="yes">
+                <source>General</source>
+            </trans-unit>
+            <trans-unit id="groups.position" xml:space="preserve" approved="yes">
+                <source>Position</source>
+            </trans-unit>
+            <trans-unit id="groups.icon" xml:space="preserve" approved="yes">
+                <source>Icon</source>
+            </trans-unit>
+            <trans-unit id="properties.top" xml:space="preserve" approved="yes">
+                <source>From top</source>
+            </trans-unit>
+            <trans-unit id="properties.left" xml:space="preserve" approved="yes">
+                <source>From left</source>
+            </trans-unit>
+            <trans-unit id="properties.icon" xml:space="preserve" approved="yes">
+                <source>Icon</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

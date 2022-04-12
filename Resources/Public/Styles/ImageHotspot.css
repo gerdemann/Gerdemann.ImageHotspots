@@ -1,0 +1,83 @@
+.imagehotspot-container {
+    position: relative;
+}
+
+.imagehotspot-image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+}
+
+.imagehotspot-hotspot {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.imagehotspot-hotspot--selected {
+    z-index: 99999;
+}
+.imagehotspot-hotspot--selected .imagehotspot-hotspot__label {
+    opacity: 1;
+}
+
+.imagehotspot-hotspot__button {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    z-index: 1;
+}
+@media (min-width: 768px) {
+    .imagehotspot-hotspot__button {
+        height: 30px;
+        width: 30px;
+    }
+}
+@media (min-width: 992px) {
+    .imagehotspot-hotspot__button {
+        height: 45px;
+        width: 45px;
+    }
+}
+
+
+.imagehotspot-hotspot__label {
+    position: absolute;
+    padding: 0 0 1.1em 0;
+    width: 16em;
+    max-width: 50vw;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: "Open Sans", sans-serif;
+    font-size: 14.5px;
+    line-height: 1.45em;
+    z-index: 2;
+    pointer-events: none;
+    border-radius: 2px;
+    user-select: none;
+    opacity: 0;
+    transition: all 0.1s linear;
+}
+.imagehotspot-hotspot__label h4 {
+    margin: 0;
+    padding: 0.65em 24px;
+    background-color: #555;
+    font-size: 1.1em;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    color: white;
+    border-radius: 2px 2px 0 0;
+}
+.imagehotspot-hotspot__label p {
+    margin: 0;
+    padding: 1.1em 24px 0 24px;
+    color: #333;
+}
+
+.imagehotspot-hotspot--top-left .imagehotspot-hotspot__label {
+    top: 24px;
+    left: 24px;
+}

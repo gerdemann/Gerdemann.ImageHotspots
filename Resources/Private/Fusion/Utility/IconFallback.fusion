@@ -1,0 +1,4 @@
+prototype(Gerdemann.ImageHotspots:Utility.IconFallback) < prototype(Neos.Fusion:ResourceUri) {
+    path = 'Images/Camera.svg'
+    package = 'Gerdemann.ImageHotspots'
+}

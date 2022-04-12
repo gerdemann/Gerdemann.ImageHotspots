@@ -1,0 +1,4 @@
+'Neos.Neos:Node':
+  constraints:
+    nodeTypes:
+      'Gerdemann.ImageHotspots:Content.Hotspot': false
