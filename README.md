@@ -1,9 +1,13 @@
 # Gerdemann.ImageHotspots
 
+[![Latest Stable Version](http://poser.pugx.org/gerdemann/imagehotspots/v)](https://packagist.org/packages/gerdemann/imagehotspots)
+[![License](http://poser.pugx.org/gerdemann/imagehotspots/license)](https://packagist.org/packages/gerdemann/imagehotspots)
+
 **Attention!** This package is currently in development.
 
 **ToDos:**
 * Add support for editable PopUp Content 
+* Support for Neos 8
 
 ## Installation
 
