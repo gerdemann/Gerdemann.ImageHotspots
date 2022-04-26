@@ -6,10 +6,14 @@
                 <source>Hotspot</source>
                 <target xml:lang="de">Hotspot</target>
             </trans-unit>
+
+            <!-- tabs -->
             <trans-unit id="tabs.general" xml:space="preserve" approved="yes">
                 <source>General</source>
                 <target xml:lang="de">Allgemein</target>
             </trans-unit>
+
+            <!-- groups -->
             <trans-unit id="groups.position" xml:space="preserve" approved="yes">
                 <source>Position</source>
                 <target xml:lang="de">Position</target>
@@ -18,6 +22,8 @@
                 <source>Icon</source>
                 <target xml:lang="de">Icon</target>
             </trans-unit>
+
+            <!-- properties -->
             <trans-unit id="properties.top" xml:space="preserve" approved="yes">
                 <source>From top</source>
                 <target xml:lang="de">Von oben</target>

@@ -1,4 +1,5 @@
 prototype(Gerdemann.ImageHotspots:Content.Hotspot) < prototype(Neos.Neos:ContentComponent) {
+    // Renderer
     renderer = Gerdemann.ImageHotspots:Component.Atom.Hotspot {
         top = ${q(node).property('top')}
         left = ${q(node).property('left')}
@@ -19,5 +20,7 @@ prototype(Gerdemann.ImageHotspots:Content.Hotspot) < prototype(Neos.Neos:Content
                 renderer = Gerdemann.ImageHotspots:Utility.IconFallback
             }
         }
+
+        content = Gerdemann.ImageHotspots:Content.HotspotContent
     }
 }

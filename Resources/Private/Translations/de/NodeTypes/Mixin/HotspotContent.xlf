@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file original="" product-name="Gerdemann.ImageHotspots" source-language="en" datatype="plaintext" target-language="de">
+        <body>
+            <trans-unit id="groups.contentSettings" xml:space="preserve" approved="yes">
+                <source>Content-Box</source>
+                <target xml:lang="de">Content-Box</target>
+            </trans-unit>
+
+            <!-- properties -->
+            <trans-unit id="properties.contentBoxWidth" xml:space="preserve" approved="yes">
+                <source>Width of the box (in px)</source>
+                <target xml:lang="de">Breite der Box (in px)</target>
+            </trans-unit>
+            <trans-unit id="properties.contentBoxPadding" xml:space="preserve" approved="yes">
+                <source>Inner box padding</source>
+                <target xml:lang="de">Padding der inneren Box</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

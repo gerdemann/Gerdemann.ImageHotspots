@@ -1,0 +1,30 @@
+'Gerdemann.ImageHotspots:Mixin.HotspotContent':
+  abstract: true
+  childNodes:
+    content:
+      type: 'Neos.Neos:ContentCollection'
+  ui:
+    inspector:
+      groups:
+        contentSettings:
+          label: i18n
+          tab: 'general'
+          icon: 'fas fa-chalkboard'
+          position: 30
+  properties:
+    contentBoxWidth:
+      type: integer
+      defaultValue: 300
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: 'contentSettings'
+    contentBoxPadding:
+      type: string
+      defaultValue: '15px'
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: 'contentSettings'
