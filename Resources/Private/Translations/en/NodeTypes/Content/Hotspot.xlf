@@ -5,15 +5,21 @@
             <trans-unit id="ui.label" xml:space="preserve" approved="yes">
                 <source>Hotspot</source>
             </trans-unit>
+
+            <!-- tabs -->
             <trans-unit id="tabs.general" xml:space="preserve" approved="yes">
                 <source>General</source>
             </trans-unit>
+
+            <!-- groups -->
             <trans-unit id="groups.position" xml:space="preserve" approved="yes">
                 <source>Position</source>
             </trans-unit>
             <trans-unit id="groups.icon" xml:space="preserve" approved="yes">
                 <source>Icon</source>
             </trans-unit>
+
+            <!-- properties -->
             <trans-unit id="properties.top" xml:space="preserve" approved="yes">
                 <source>From top</source>
             </trans-unit>

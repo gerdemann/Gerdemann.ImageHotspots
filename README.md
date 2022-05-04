@@ -6,7 +6,6 @@
 **Attention!** This package is currently in development.
 
 **ToDos:**
-* Add support for editable PopUp Content 
 * Support for Neos 8
 
 ## Installation
@@ -34,6 +33,13 @@ prototype(Neos.Neos:Page).hotspotBackendJavaScript >
 ## Change icon fallback
 
 Just overwrite the `Gerdemann.ImageHotspots:Utility.IconFallback` fusion prototype.
+
+## Change the rendering of the content box
+
+Just overwrite the (renderer of the) `Gerdemann.ImageHotspots:Content.HotspotContent` fusion prototype.
+
+It is also possible to create own NodeTypes that inherit from `Gerdemann.ImageHotspots:Content.Hotspot`.
+To disable unnecessary properties just disable the supertype `Gerdemann.ImageHotspots:Mixin.HotspotContent` in the new NodeType.
 
 ## License
 

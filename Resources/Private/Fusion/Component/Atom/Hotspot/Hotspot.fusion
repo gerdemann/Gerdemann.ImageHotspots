@@ -1,4 +1,5 @@
 prototype(Gerdemann.ImageHotspots:Component.Atom.Hotspot) < prototype(Neos.Fusion:Component) {
+    // API
     top = 50
     left = 50
     iconUri = ''
@@ -8,9 +9,8 @@ prototype(Gerdemann.ImageHotspots:Component.Atom.Hotspot) < prototype(Neos.Fusio
             <div class="imagehotspot-hotspot__button">
                 <img src={props.iconUri} alt="Hotspot" />
             </div>
-            <div class="imagehotspot-hotspot__label">
-                <h4>This is the title</h4>
-                <p>This is some text that goes in the label. It describes the item.</p>
+            <div class="imagehotspot-hotspot__content-collapse">
+                {props.content}
             </div>
         </div>
     `

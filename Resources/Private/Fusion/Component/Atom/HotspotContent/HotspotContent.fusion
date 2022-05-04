@@ -1,0 +1,24 @@
+prototype(Gerdemann.ImageHotspots:Component.Atom.HotspotContent) < prototype(Neos.Fusion:Component) {
+    // API
+    contentBoxWidth = '500px'
+    contentBoxPadding = '15px'
+    content = ''
+
+    // Implementation
+    contentBoxStyles = ''
+    contentBoxStyles.@process.setWidth = ${value + ' width: ' + this.contentBoxWidth + 'px;'}
+    contentBoxStyles.@process.setWidth.@if.isSet = ${this.contentBoxWidth}
+
+    contentInnerBoxStyles = ''
+    contentInnerBoxStyles.@process.setPadding = ${value + ' padding: ' + this.contentBoxPadding + ';'}
+    contentInnerBoxStyles.@process.setPadding.@if.isSet = ${this.contentBoxPadding}
+
+    // Renderer
+    renderer = afx`
+        <div class="imagehotspot-hotspot__content" style={props.contentBoxStyles}>
+            <div class="imagehotspot-hotspot-content" style={props.contentInnerBoxStyles}>
+                {props.content}
+            </div>
+        </div>
+    `
+}

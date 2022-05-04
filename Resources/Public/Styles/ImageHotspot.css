@@ -18,22 +18,35 @@
 }
 
 .imagehotspot-hotspot--selected {
-    z-index: 99999;
+    z-index: 10;
 }
-.imagehotspot-hotspot--selected .imagehotspot-hotspot__label {
+.imagehotspot-hotspot--selected .imagehotspot-hotspot__content-collapse {
+    visibility: visible;
     opacity: 1;
 }
 
 .imagehotspot-hotspot__button {
+    cursor: pointer;
     height: 20px;
     width: 20px;
     position: relative;
     z-index: 1;
 }
+
+.imagehotspot-hotspot--top-left .imagehotspot-hotspot__content-collapse {
+    top: 24px;
+    left: 24px;
+}
+
 @media (min-width: 768px) {
     .imagehotspot-hotspot__button {
         height: 30px;
         width: 30px;
+    }
+
+    .imagehotspot-hotspot--top-left .imagehotspot-hotspot__content-collapse {
+        top: 35px;
+        left: 35px;
     }
 }
 @media (min-width: 992px) {
@@ -41,27 +54,33 @@
         height: 45px;
         width: 45px;
     }
+
+    .imagehotspot-hotspot--top-left .imagehotspot-hotspot__content-collapse {
+        top: 50px;
+        left: 50px;
+    }
 }
 
-
-.imagehotspot-hotspot__label {
+.imagehotspot-hotspot__content-collapse {
     position: absolute;
     padding: 0 0 1.1em 0;
+    z-index: 2;
+    visibility: collapse;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.imagehotspot-hotspot__content {
     width: 16em;
-    max-width: 50vw;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     font-family: "Open Sans", sans-serif;
-    font-size: 14.5px;
+    font-size: 14px;
     line-height: 1.45em;
-    z-index: 2;
-    pointer-events: none;
     border-radius: 2px;
-    user-select: none;
-    opacity: 0;
-    transition: all 0.1s linear;
 }
-.imagehotspot-hotspot__label h4 {
+
+.imagehotspot-hotspot__content h4 {
     margin: 0;
     padding: 0.65em 24px;
     background-color: #555;
@@ -71,13 +90,14 @@
     color: white;
     border-radius: 2px 2px 0 0;
 }
-.imagehotspot-hotspot__label p {
+.imagehotspot-hotspot__content p {
     margin: 0;
     padding: 1.1em 24px 0 24px;
     color: #333;
 }
 
-.imagehotspot-hotspot--top-left .imagehotspot-hotspot__label {
-    top: 24px;
-    left: 24px;
+.imagehotspot-hotspot-headline {
+    min-height: 50px;
+    padding-right: 50px;
+    word-break: break-word;
 }

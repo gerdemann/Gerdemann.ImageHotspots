@@ -1,0 +1,15 @@
+prototype(Gerdemann.ImageHotspots:Content.HotspotContent) < prototype(Neos.Neos:ContentComponent) {
+    // API
+    contentBoxWidth = ${q(node).property('contentBoxWidth')}
+    contentBoxPadding = ${q(node).property('contentBoxPadding')}
+
+    // Renderer
+    renderer = Gerdemann.ImageHotspots:Component.Atom.HotspotContent {
+        contentBoxWidth = ${props.contentBoxWidth}
+        contentBoxPadding = ${props.contentBoxPadding}
+
+        content = Neos.Neos:ContentCollection {
+            nodePath = 'content'
+        }
+    }
+}

@@ -1,6 +1,7 @@
 'Gerdemann.ImageHotspots:Content.Hotspot':
   superTypes:
     'Neos.Neos:Content': true
+    'Gerdemann.ImageHotspots:Mixin.HotspotContent': true
   constraints:
     nodeTypes:
       '*': false
@@ -24,7 +25,7 @@
           label: i18n
           tab: 'general'
           icon: 'icon-camera'
-          position: 10
+          position: 20
   properties:
     top:
       type: string
