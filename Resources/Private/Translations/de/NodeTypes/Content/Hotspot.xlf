@@ -23,7 +23,17 @@
                 <target xml:lang="de">Icon</target>
             </trans-unit>
 
+            <!-- CreationDialog -->
+            <trans-unit id="creationDialog.title" xml:space="preserve" approved="yes">
+                <source>Title (in Neos Backend)</source>
+                <target xml:lang="de">Titel (im Neos Backend)</target>
+            </trans-unit>
+
             <!-- properties -->
+            <trans-unit id="properties.title" xml:space="preserve" approved="yes">
+                <source>Title</source>
+                <target xml:lang="de">Titel</target>
+            </trans-unit>
             <trans-unit id="properties.top" xml:space="preserve" approved="yes">
                 <source>From top</source>
                 <target xml:lang="de">Von oben</target>

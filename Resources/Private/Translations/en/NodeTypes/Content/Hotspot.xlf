@@ -19,7 +19,15 @@
                 <source>Icon</source>
             </trans-unit>
 
+            <!-- CreationDialog -->
+            <trans-unit id="creationDialog.title" xml:space="preserve" approved="yes">
+                <source>Title (in Neos Backend)</source>
+            </trans-unit>
+
             <!-- properties -->
+            <trans-unit id="properties.title" xml:space="preserve" approved="yes">
+                <source>Title</source>
+            </trans-unit>
             <trans-unit id="properties.top" xml:space="preserve" approved="yes">
                 <source>From top</source>
             </trans-unit>
