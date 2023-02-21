@@ -3,10 +3,20 @@
 [![Latest Stable Version](http://poser.pugx.org/gerdemann/imagehotspots/v)](https://packagist.org/packages/gerdemann/imagehotspots)
 [![License](http://poser.pugx.org/gerdemann/imagehotspots/license)](https://packagist.org/packages/gerdemann/imagehotspots)
 
-**Attention!** This package is currently in development.
-
-**ToDos:**
-* Support for Neos 8
+<table>
+  <tr>
+    <th>Branch</th>
+    <th>For Neos-Version</th>
+  </tr>
+  <tr>
+    <td>main</td>
+    <td>Neos 8+</td>
+  </tr>
+  <tr>
+    <td>v1</td>
+    <td>Neos 7</td>
+  </tr>
+</table>
 
 ## Installation
 
