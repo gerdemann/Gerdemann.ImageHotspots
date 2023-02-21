@@ -50,7 +50,7 @@
         reloadIfChanged: true
         inspector:
           group: 'position'
-          editor: 'Shel.Neos.RangeEditor/RangeEditor'
+          editor: 'Neos.Neos/Inspector/Editors/RangeEditor'
           editorOptions:
             min: 0
             max: 100
@@ -64,7 +64,7 @@
         reloadIfChanged: true
         inspector:
           group: 'position'
-          editor: 'Shel.Neos.RangeEditor/RangeEditor'
+          editor: 'Neos.Neos/Inspector/Editors/RangeEditor'
           editorOptions:
             min: 0
             max: 100

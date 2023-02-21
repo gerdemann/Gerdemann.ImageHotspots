@@ -8,8 +8,7 @@
         "neoscms"
     ],
     "require": {
-        "neos/neos": "^7.0",
-        "shel/neos-rangeeditor": "~1.1.1",
+        "neos/neos": "^8.0",
         "mhsdesign/liveinspectorjsevents": "~2.0.2"
     },
     "autoload": {
